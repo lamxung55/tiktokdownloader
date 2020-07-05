@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tiktok Downloader</string>
+    <string name="title_home">Downloader</string>
+    <string name="title_dashboard">Galery</string>
+    <string name="title_notifications">Help</string>
+</resources>

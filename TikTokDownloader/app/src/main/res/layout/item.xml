@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/videoIcon"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:src="@drawable/icon_music"
+        >
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/videoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video name"
+            android:textColor="#574757"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+<!--        <TextView-->
+<!--            android:id="@+id/videoPath"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Video path"-->
+<!--            android:textColor="#574757"-->
+<!--            android:textSize="15sp"></TextView>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/del"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            >
+        </ImageView>
+        <ImageView
+            android:id="@+id/btnShare"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share"
+            android:layout_margin="5dp"
+            android:layout_gravity="right">
+        </ImageView>
+
+    </LinearLayout>
+</LinearLayout>

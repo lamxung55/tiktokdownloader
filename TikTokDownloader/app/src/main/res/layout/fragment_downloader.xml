@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.downloader.DownloaderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/DownloadLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_notifications_black_24dp"
+            android:hint="Paste your link here..."
+            >
+        </EditText>
+        <Button
+            android:id="@+id/DownloadOrigin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Origin"
+            android:layout_marginTop="30dp"
+            android:gravity="center|center_vertical"
+            android:textAlignment="center"
+            android:drawableRight="@drawable/ic_camera_roll"
+            android:background="#FE2C55"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/DownloadNoWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download No Watermark"
+            android:layout_marginTop="30dp"
+            android:gravity="center|center_vertical"
+            android:textAlignment="center"
+            android:drawableRight="@drawable/ic_video_water"
+            android:background="#59C316"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/DownloadMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Music only"
+            android:layout_marginTop="30dp"
+            android:gravity="center|center_vertical"
+            android:textAlignment="center"
+            android:drawableRight="@drawable/ic_music"
+            android:background="#E8E2AD"
+            >
+        </Button>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            ads:adSize="LARGE_BANNER"
+            ads:adUnitId="ca-app-pub-7358729072042857/8996399563">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
