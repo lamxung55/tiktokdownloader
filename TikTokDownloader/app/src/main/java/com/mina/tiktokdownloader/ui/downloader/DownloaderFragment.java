@@ -65,6 +65,7 @@ public class DownloaderFragment extends Fragment {
                 progressDoalog.setTitle("Downloading your media");
                 progressDoalog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 progressDoalog.show();
+                progressDoalog.setCanceledOnTouchOutside(false);
                 progressDoalog.incrementProgressBy(1);
                 Log.d("Mina", "Donwload clicked");
                 AndroidNetworking.get(API_URL + txtUrl.getText().toString())

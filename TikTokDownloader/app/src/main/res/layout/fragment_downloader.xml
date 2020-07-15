@@ -61,16 +61,14 @@
         </Button>
 
         <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_height="223dp"
             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            ads:adSize="LARGE_BANNER"
-            ads:adUnitId="ca-app-pub-7358729072042857/8996399563">
-        </com.google.android.gms.ads.AdView>
+            app:adSize="LARGE_BANNER"
+            app:adUnitId="ca-app-pub-7358729072042857/8996399563"></com.google.android.gms.ads.AdView>
 
     </LinearLayout>
 
