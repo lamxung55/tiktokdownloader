@@ -61,7 +61,7 @@ public class DownloaderFragment extends Fragment {
                 }
                 progressDoalog = new ProgressDialog(getContext());
                 progressDoalog.setMax(100);
-                progressDoalog.setMessage("Its loading....");
+                progressDoalog.setMessage("It's loading....");
                 progressDoalog.setTitle("Downloading your media");
                 progressDoalog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 progressDoalog.show();
@@ -104,10 +104,11 @@ public class DownloaderFragment extends Fragment {
                 Log.d("Mina", "Donwload clicked");
                 progressDoalog = new ProgressDialog(getContext());
                 progressDoalog.setMax(100);
-                progressDoalog.setMessage("Its loading....");
+                progressDoalog.setMessage("It's loading....");
                 progressDoalog.setTitle("Downloading your media");
                 progressDoalog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 progressDoalog.show();
+                progressDoalog.setCanceledOnTouchOutside(false);
                 progressDoalog.incrementProgressBy(1);
                 Log.d(TAG, "Starting download url: " + API_URL + txtUrl.getText().toString());
                 AndroidNetworking.get(API_URL + txtUrl.getText().toString())
@@ -144,10 +145,11 @@ public class DownloaderFragment extends Fragment {
                 Log.d("Mina", "Donwload clicked");
                 progressDoalog = new ProgressDialog(getContext());
                 progressDoalog.setMax(100);
-                progressDoalog.setMessage("Its loading....");
+                progressDoalog.setMessage("It's loading....");
                 progressDoalog.setTitle("Downloading your media");
                 progressDoalog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 progressDoalog.show();
+                progressDoalog.setCanceledOnTouchOutside(false);
                 progressDoalog.incrementProgressBy(1);
                 AndroidNetworking.get(API_URL + txtUrl.getText().toString())
                         .build()
